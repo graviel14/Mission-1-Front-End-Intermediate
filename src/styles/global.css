@@ -1,0 +1,99 @@
+:root {
+  /* Colors (from Figma "Colors") */
+  --primary: #3ecf4c;
+  --primary-dark: #2fb83c;
+  --primary-soft: #e8f9ea;
+  --secondary: #ffbd3a;
+  --tertiary: #f64920;
+
+  --text-dark: #222222;
+  --text-dark-2: #777777;
+  --text-dark-3: #b3b3b6;
+  --text-light-2: #c1c1c3;
+
+  --bg: #fffdf3;
+  --bg-white: #ffffff;
+  --bg-muted: #f7fafd;
+  --border: #e5e5e5;
+
+  --error: #e03a1b;
+  --info: #0b7ad8;
+
+  --font-heading: "Poppins", system-ui, sans-serif;
+  --font-body: "DM Sans", system-ui, sans-serif;
+
+  --radius: 8px;
+  --radius-lg: 12px;
+  --container: 1120px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--text-dark);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+  margin: 0;
+  line-height: 1.25;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  max-width: var(--container);
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
